@@ -1,8 +1,8 @@
-﻿#Modbus IoT
+﻿# Modbus IoT
 
 This code is designed to read temperature data from MOXA ioLogik E2262 controller and then have this data sent to the Azure IoT Hub.
 
-##Requirements
+## Requirements
 
 To get this code to work on your own modbus device, you'll need:
 
@@ -10,7 +10,7 @@ To get this code to work on your own modbus device, you'll need:
 * the IP address of your modbus address
 * the connection string for the device you create on the Azure IoT Hub
 
-##Extracting data from modbus device
+## Extracting data from modbus device
 
 In order to extract the data from the MOXA ioLogik E2262 controller, you'll need to know it's IP address.
 
@@ -34,7 +34,7 @@ If you need more help configuring your Moxa device, please refer to the manual f
 
 Also in your configuration file, you'll be able to view the register address for your various analog and digital I/O ports
 
-##How to create an IoT Hub from the Azure portal and get device connection string
+## How to create an IoT Hub from the Azure portal and get device connection string
 
 You'll need to create an IoT Hub to receive your data. Once you've created your IoT Hub you'll need to create a new 'device' and copy it's connection string into the code.
 
