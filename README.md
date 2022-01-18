@@ -3,15 +3,22 @@
 This code is designed to read temperature data from MOXA ioLogik E2262 controller and then have this data sent to the Azure IoT Hub.
 
 ## Requirements
-
 To get this code to work on your own modbus device, you'll need:
 
-* to pip install the PyModbusTCP and azure-iot-device libraries
+* to install the dependencies required to get the program to run
 * the IP address of your modbus address
 * the connection string for the device you create on the Azure IoT Hub
 
-## Extracting data from modbus device
+## Installing depedecies 
+A few of the libraries used in this project don't come preinstalled by default with python so you'll need to install them. This can easily be achieved by using the following steps:
 
+1. open command prompt in the project folder and create a virtual enviroment `python -m venv env`
+2. now activate your enviroment using `env\Scripts\activate.bat`
+3. finally install the dependencies required to get the pogram to run using `pip install -r requirements.txt`
+
+If the `python` or `pip` commands don't work in your command prompt/terminal please refer to [this](https://www.makeuseof.com/tag/install-pip-for-python/) article to help you setup python correctly.
+
+## Extracting data from modbus device
 In order to extract the data from the MOXA ioLogik E2262 controller, you'll need to know it's IP address.
 
 The IP address can easily be obtained and changed from MOXA's ioAdmin software. This software can be downloaded from Moxa's official site [here](https://www.moxa.com/en/support/product-support/software-and-documentation/search?psid=71178)
