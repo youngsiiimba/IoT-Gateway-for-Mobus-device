@@ -8,6 +8,8 @@ To get this code to work on your own modbus device, you'll need:
 * to install the dependencies required to get the program to run
 * the IP address of your modbus address
 * the connection string for the device you create on the Azure IoT Hub
+* to install device explorer in order to view the data being sent to the Azure IoT Hub
+
 
 ## Installing depedecies 
 A few of the libraries used in this project don't come preinstalled by default with python so you'll need to install them. This can easily be achieved by using the following steps:
@@ -46,4 +48,15 @@ Also in your configuration file, you'll be able to view the register address for
 You'll need to create an IoT Hub to receive your data. Once you've created your IoT Hub you'll need to create a new 'device' and copy it's connection string into the code.
 
 Please find a detailed tutorial on how to do this from Microsofts documentation [here](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-create-through-portal)
+
+
+## How to install Device Explorer and view the data being sent to Azure IoT Hub
+This section describes how to download, build and use the Device Explorer tool for managing and using IoT Hub devices.
+
+1. Download the [DeviceExplorer.msi](https://github.com/Azure/azure-iot-sdks/releases/download/2016-11-17/SetupDeviceExplorer.msi) by using the link [here](https://github.com/Azure/azure-iot-sdks/releases/download/2016-11-17/SetupDeviceExplorer.msi)
+2. Install Device Explorer 
+3. In the Configuration tab, add the connection string for your IoT Hub. Then click "Update" For information about how to find this connection string, please refer to microsofts documentation [here](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-create-through-portal)
+4. Click on the "Data" tab
+5. Click on the drop down menu labelled "Device ID" and find the device you created. If you haven't created a device yet please refer to Microsofts documentation [here](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-create-through-portal)
+6. Finally click on "Monitor" and Device Explorer will start listening for incoming data
 
